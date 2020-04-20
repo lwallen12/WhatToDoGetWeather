@@ -99,7 +99,7 @@ namespace WhatToDoGetWeather
 
                         var conditionDateTime = Convert.ToDateTime(weatherList[i].dt_txt);
                         var lastUpdate = DateTime.Now;
-                        lastUpdate = lastUpdate.AddHours(-6);
+                        lastUpdate = lastUpdate.AddHours(-5);
                         var temperature = (((weatherList[i].main.temp - 273.15) * 9 / 5) + 32);
                         var feelsLike = (((weatherList[i].main.feels_like - 273.15) * 9 / 5) + 32);
                         var pressure = weatherRootObject.list[i].main.pressure;
